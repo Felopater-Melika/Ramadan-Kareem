@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family-NunitoLwght@200;300;400;600;700;800;&displays=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+section header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+}
+section header .logo {
+  position: relative;
+  color: #ff5e8e;
+  display: inline-block;
+  font-size: 2em;
+  text-decoration: none;
+  font-weight: 800;
+}
+section header ul {
+  position: relative;
+  display: flex;
+}
+section header ul li {
+  list-style: none;
+}
+section header ul li a {
+  color: #0169b2;
+  font-weight: 600;
+  font: size 1.1em;
+  margin-left: 10px;
+  padding: 8px 18px;
+  display: inline-block;
+  text-decoration: none;
+}
+section header ul li .active,
+section header ul li a:hover {
+  background: #0169b2;
+  color: #fff;
+  border-radius: 30px;
+}
+section header ul li a:hover {
+  background: #0169b2;
+  color: #fff;
+  border-radius: 30px;
+  transition: ease-in 0.3s;
+}
+section .content {
+  position: relative;
+}
+section .content .textbox {
+  position: relative;
+  max-width: 550px;
+}
+section .content .textbox h2 {
+  color: #0169b2;
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  line-height: 1.2em;
+  font-weight: 700;
+}
+section .content .textbox p {
+  font-size: 1.2em;
+  color: #333;
+}
+section .content .textbox a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background: #ff5e8e;
+  color: #fff;
+  font-size: 1.2em;
+  border-radius: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
