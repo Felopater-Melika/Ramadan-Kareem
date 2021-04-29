@@ -14,6 +14,8 @@ section {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    overflow: hidden;
+    // nav bar styling
     header {
         position: fixed;
         top: 0;
@@ -23,6 +25,7 @@ section {
         display: flex;
         justify-content: space-between;
         z-index: 1000;
+        // logo styling
         .logo {
             position: relative;
             color: #ff5e8e;
@@ -34,6 +37,7 @@ section {
             animation: slide-left 0.5s linear forwards;
             animation-delay: 0.2s;
         }
+        // navigation styling
         ul {
             position: relative;
             display: flex;
@@ -51,6 +55,7 @@ section {
                     animation: slide-top 0.5s linear forwards;
                     animation-delay: calc(0.2s * var(--i));
                 }
+                // nav effects
                 .active,
                 a:hover {
                     background: #0169b2;
@@ -66,11 +71,13 @@ section {
             }
         }
     }
+    // body styling
     .content {
         position: relative;
         .textbox {
             position: relative;
             max-width: 550px;
+            //body header styling
             h2 {
                 color: #0169b2;
                 font-size: 3.5em;
@@ -81,6 +88,7 @@ section {
                 animation: slide-right 0.5s linear forwards;
                 animation-delay: 1.5s;
             }
+            // body discrition styling
             p {
                 font-size: 1.2em;
                 color: #333;
@@ -88,6 +96,7 @@ section {
                 animation: slide-left 0.5s linear forwards;
                 animation-delay: 1.75s;
             }
+            // call to action styling (button)
             a {
                 display: inline-block;
                 margin-top: 20px;
@@ -105,6 +114,7 @@ section {
             }
         }
     }
+    //social media icons styling
     .sci {
         position: absolute;
         bottom: 40px;
@@ -133,22 +143,26 @@ section {
                     transform: scale(0.5);
                 }
             }
+            // social media hover effects
             a:hover {
                 background-color: #ff5e8e;
                 transform: translateY(-10px);
             }
         }
     }
+    // mosque pic styling
     .mosque {
         position: absolute;
         bottom: 0;
         right: 0;
-        max-width: 700px opacity: 0;
+        max-width: 700px;
+        opacity: 0;
         animation: fade-in 0.5s linear forwards;
         animation-delay: 3.5s;
     }
 }
 
+// tablet responsive
 @media (max-width: 900px) {
     section {
         padding: 150px 20px;
@@ -163,7 +177,6 @@ section {
         }
         header {
             padding: 20px;
-            //FIXME nav toggle close not showing when opened
             .navigation {
                 display: none;
             }
@@ -179,6 +192,7 @@ section {
                 align-items: center;
                 flex-direction: column;
             }
+            // toggle effects for nav
             .toggle {
                 position: fixed;
                 top: 20px;
@@ -209,6 +223,7 @@ section {
     }
 }
 
+// animations
 @media (max-width: 900px) {
     .mosque {
         opacity: 0.4 !important;
